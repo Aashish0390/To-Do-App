@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>To-Do Tasks app</title>
-</head>
-<body>
-<h1>Create Task</h1>
-<p>Fill in the details below to create a new task in your project management tool</p>
-</body>
+    <head>
+        <title>To-Do Tasks app</title>
+    </head>
+    <body>
+        <h1>Create Task</h1>
+        <!--Text area using required attribute-->
+        <p>Fill in the details below to create a new <br>task in your project management tool.</p>
+        <textarea id="Task Title" name="Text Title" rows="1" cols="30" required>Task Title</textarea><p></p>
+        <textarea id="Task Description" name="Task Description" rows="3" cols="30" required>Task Description</textarea><br>
+        
+        <p><!--Drop-Down list--></p>
+        <select name="Priority" id="Priority" required>
+            <option value="High">Priority-High</option>
+            <option value="Medium">Priority-Medium</option>
+            <option value="Low">Priority-Low</option>
+        </select><br>
+        
+        <p><!--Drop Down list--></p>
+        <select name="Status" id="Status" required>
+            <option value="Open">Status-Open</option>
+            <option value="Closed">Status-Closed</option>
+        </select><br>
+
+        <p>
+            <!--Date attribute-->
+        </p>
+
+        <input type="date" name="begin" placeholder="YYYY-MM-DD" value="" min="1990-01-01" max="2050-12-31" required>
+
+        <p><!--submit--></p>
+
+        <input type="submit" onclick="alert">
+    </body>
 </html>
