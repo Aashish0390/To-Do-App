@@ -5,38 +5,38 @@
         <link rel="stylesheet" href="file.css">
     </head>
     <body>
-        <section>
+        <div>
         
-        <h1>Create Task</h1>
-        <!--Text area using required attribute-->
-        <p class="">Fill in the details below to create a new <br>task in your project management tool.</p>
+            <h1 class="heading">Create Task</h1>
+            <!--Text area using required attribute-->
+            <p class="para">Fill in the details below to create a new <br>task in your project management tool.</p>
 
-        <form>
+            <form>
         
-        <input type="text" id="text" class="text" name="text" value="Task Title"></input><br>
-        <textarea id="Task Description" class="textarea" name="Task Description" rows="2" cols="30" required>Task Description</textarea><br>
+                <input type="text" id="text" class="text" name="text" value="Task Title" ></input><br>
+                <textarea id="Task Description" class="textarea" name="Task Description" rows="2" cols="30" required>Task Description</textarea><br>
         
-        <!--Drop-Down list-->
-        <select name="Priority" class="Priority" id="Priority" required>
-            <option value="High">Priority-High</option>
-            <option value="Medium">Priority-Medium</option>
-            <option value="Low">Priority-Low</option>
-        </select><br>
+                <!--Drop-Down list-->
+                <select name="Priority" class="Priority" id="Priority" required>
+                    <option value="High">Priority - High</option>
+                    <option value="Medium">Priority - Medium</option>
+                    <option value="Low">Priority - Low</option>
+                </select><br>
         
-        <!--Drop Down list-->
-        <select name="Status" class="Status" id="Status" required>
-            <option value="Open">Status-Open</option>
-            <option value="Closed">Status-Closed</option>
-        </select><br>
+                <!--Drop Down list-->
+                <select name="Status" class="Status" id="Status" required>
+                    <option value="Open">Status - Open</option>
+                    <option value="Closed">Status - Closed</option>
+                </select><br>
 
-            <!--Date attribute-->
+                    <!--Date attribute-->
 
-        <input type="date" id="date" class="date" name="begin" placeholder="DD-MM-YYYY" value="" min="01-01-1990" max="12-31-2050" required><br>
+                <input type="date" id="date" class="date" name="begin" placeholder="DD-MM-YYYY" value="" min="01-01-1990" max="12-31-2050" required><br>
         
-        <!--submit-->
+                <!--submit-->
 
-        <input type="submit" id="submit" class="submit" value="Submit" onclick="alert('Task Added')">
-    </form>
-</section>
+                <input type="submit" id="submit" class="submit" value="Submit" onclick="alert('Task Added')">
+            </form>
+        </div>
     </body>
 </html>
