@@ -1,34 +1,53 @@
-body{
-    background-color:silver;
-    margin: 30px;
+div{
+    background-color:rgba(204, 211, 211, 0.671);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 280px;
+    border-radius: 7px;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    
 
 }
-h1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 2%;
+.heading{
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 30px;
 }
-p{
-    text-align:justify;
+
+.para{
+    
     margin-bottom: 1px;
+    padding-left: 5px;
+    text-align: justify;
+    padding-bottom: 10px;
 }
+
+
 .text{
     border:solid #ccc;
     padding: 5px;
-    width: 261px;
+    width: 255px;
     margin-top: 2px;
     margin-bottom: 4px;
-    border-radius: 7px;
+    border-radius: 7px; 
+    color: rgb(51, 132, 170);
+    
 }
+
 
 .textarea{
     border: 2px solid #ccc;
     padding: 10px;
-    text-align: left;
-    text-align:justify;
-    margin-top:2px;
-    width: 250px;
-    padding-top: 3%;
+    padding-top: 20px;
+    margin-top: 2px;
+    width: 245px;
     border-radius: 7px;
+    color: rgb(51, 132, 170);
+
     }
 
 .Priority{
@@ -36,14 +55,16 @@ p{
     padding: 5px;
     width: 270px;
     margin-top: 3px;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     border-radius: 7px;
 }
+
+
 .Status{
     border: 2px solid #ccc;
     padding: 5px;
     width: 270px;
-    margin-top: 3px;
+    margin-top: 4px;
     margin-bottom: 2px;
     border-radius: 7px;
 }
@@ -56,14 +77,19 @@ p{
     margin-top: 5px;
     margin-bottom: 2px;
     border-radius: 7px;
+    color: rgb(51, 132, 170);
+
 }
 
 .submit{
     border: 2px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bolder;
     padding: 5px;
     width: 270px;
-    background-color: blue;
+    background-color: rgb(35, 100, 174);
     color: white;
     margin-top: 5px;
     border-radius: 7px;
+    height:35px;
 }
