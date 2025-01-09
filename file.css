@@ -1,6 +1,6 @@
 div{
     background-color:rgba(237, 244, 244, 0.671);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     
     width: 280px;
     border-radius: 3px;
@@ -8,6 +8,7 @@ div{
     padding-right: 10px;
     padding-bottom: 15px;
     height: 680px;
+    
     
 }
 
@@ -47,7 +48,7 @@ body{
     margin-top: 3px;
     margin-bottom: 3px;
     border-radius: 7px; 
-    color: rgb(59, 164, 193);
+    color: rgb(121, 126, 128);
     height: 20px;
     
 }
@@ -60,7 +61,7 @@ body{
     margin-bottom: 3px;
     width: 260px;
     border-radius: 7px;
-    color: rgb(59, 164, 193);
+    color: rgb(121, 126, 128);
     font-size: 11px;
     
     height: 50px;
@@ -99,7 +100,7 @@ body{
     margin-top: 3px;
     margin-bottom: 3px;
     border-radius: 7px;
-    color: rgb(59, 164, 193);
+    color: rgb(121, 126, 128);
     height: 20px;
     font-size: 10px;
 
@@ -118,4 +119,246 @@ body{
     border-radius: 7px;
     
     height: 40px;
+}
+
+/*Cards*/
+
+
+section{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.div-content{
+    
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    border: solid rgb(244, 247, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 260px;
+    height: 180px;
+}
+.card-input{
+    margin-top: 5px;
+   margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: medium;
+}
+.parag-input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: small;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 5px;
+    
+    
+
+}
+
+.stat-input{
+    font-size: small;
+    margin: 1px;
+    padding-top: 5px;
+}
+
+.last-input{
+    font-size: small;
+    margin: 1px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.button-input{
+    margin-top: 3px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: rgb(194, 137, 30);
+    color: white;
+    font-size: 10px;
+    height: 25px;
+    width: 80px;
+   
+}
+
+.edit-input{
+    background-color: black;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+    width: 55px;
+    font-size: small;
+    height: 30px;
+
+}
+.delete-input{
+    color: black;
+    background-color: red;
+    border: 0px;
+    border-radius: 10px;
+    width: 70px;
+    font-size: small;
+    margin-left: 2px;
+    height: 30px;
+}
+
+
+/*card 2*/
+
+
+.div-contents{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    border: solid rgb(244, 247, 248) 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 260px;
+    height: 180px;
+}
+.cards-input{
+    margin-top: 5px;
+   margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: medium;
+}
+.parags-input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: small;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 5px;
+    
+    
+
+}
+
+.stats-input{
+    font-size: small;
+    margin: 1px;
+    padding-top: 5px;
+}
+
+.lastsinput{
+    font-size: small;
+    margin: 1px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.buttons-input{
+    margin-top: 3px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: rgb(79, 183, 10);
+    color: white;
+    font-size: 10px;
+    height: 25px;
+    width: 80px;
+   
+}
+
+.edits-input{
+    background-color: black;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+    width: 55px;
+    font-size: small;
+    height: 30px;
+
+}
+.deletes-input{
+    color: black;
+    background-color: red;
+    border: 0px;
+    border-radius: 10px;
+    width: 70px;
+    font-size: small;
+    margin-left: 2px;
+    height: 30px;
+}
+
+/* card 3 */
+
+
+.div-contentss{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: solid rgb(244, 247, 248) 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 260px;
+    height: 180px;
+}
+
+.cardss-input{
+    margin-top: 5px;
+   margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: medium;
+}
+
+.paragss-input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: small;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 5px;
+    
+    
+
+}
+
+.statss-input{
+    font-size: small;
+    margin: 1px;
+    padding-top: 5px;
+}
+
+.lastss-input{
+    font-size: small;
+    margin: 1px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.buttonss-input{
+
+    margin-top: 3px;
+    border-radius: 15px;
+    border: 0px;
+    background-color:  rgb(58, 137, 228);
+    color: white;
+    font-size: 10px;
+    height: 25px;
+    width: 80px;
+   
+}
+
+.editss-input{
+    background-color: black;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+    width: 55px;
+    font-size: small;
+    height: 30px;
+
+}
+.deletess-input{
+    color: black;
+    background-color: red;
+    border: 0px;
+    border-radius: 10px;
+    width: 70px;
+    font-size: small;
+    margin-left: 2px;
+    height: 30px;
 }
