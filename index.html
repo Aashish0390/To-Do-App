@@ -13,30 +13,59 @@
 
             <form>
         
-                <input type="text" id="text" class="text" name="text" value="Task Title" ></input><br>
-                <textarea id="Task Description" class="textarea" name="Task Description" rows="2" cols="30" required>Task Description</textarea><br>
+            <input type="text" id="text" class="text" name="text" value="Task Title" ></input><br>
+            <textarea id="Task Description" class="textarea" name="Task Description" rows="2" cols="30" required>Task Description</textarea><br>
         
-                <!--Drop-Down list-->
-                <select name="Priority" class="Priority" id="Priority" required>
-                    <option value="High">Priority - High</option>
-                    <option value="Medium">Priority - Medium</option>
-                    <option value="Low">Priority - Low</option>
-                </select><br>
+            <!--Drop-Down list-->
+            <select name="priority" class="priority" id="priority" required>
+                <option value="High">Priority - High</option>
+                <option value="Medium">Priority - Medium</option>
+                <option value="Low">Priority - Low</option>
+            </select><br>
         
-                <!--Drop Down list-->
-                <select name="Status" class="Status" id="Status" required>
-                    <option value="Open">Status - Open</option>
-                    <option value="Closed">Status - Closed</option>
-                </select><br>
+            <!--Drop Down list-->
+            <select name="status" class="status" id="status" required>
+                <option value="Open">Status - Open</option>
+                <option value="Closed">Status - Closed</option>
+            </select><br>
 
-                    <!--Date attribute-->
+                <!--Date attribute-->
 
-                <input type="date" id="date" class="date" name="begin" placeholder="DD-MM-YYYY" value="" min="01-01-1990" max="12-31-2050" required><br>
+            <input type="date" id="date" class="date" name="begin" placeholder="DD-MM-YYYY" value="" min="01-01-1990" max="12-31-2050" required><br>
         
-                <!--submit-->
+            <!--submit-->
 
-                <input type="submit" id="submit" class="submit" value="Submit" onclick="alert('Task Added')">
+            <input type="submit" id="submit" class="submit" value="Submit" onclick="alert('Task Added')">
             </form>
         </div>
+        <section>
+            <div class="div-content">
+                <h1 class="card-input">Task Title 1</h1>
+                <p class="parag-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
+                <input type="submit" id="user-button" class="button-input" value="High Priority">
+                <p class="stat-input">Status: Open</p>
+                <p class="last-input">End Date: 12-01-2025</p>
+                <input type="button" class="edit-input" id="user-edit" value="Edit">
+                <input type="submit" class="delete-input" id="user-delete" value="Delete">
+            </div>
+            <div class="div-contents">
+                <h1 class="cards-input">Task Title 2</h1>
+                <p class="parags-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
+                <input type="submit" id="user-buttons" class="buttons-input" value="Medium Priority">
+                <p class="stat-input">Status: In progress</p>
+                <p class="last-input">End Date: 19-01-2025</p>
+                <input type="button" class="edits-input" id="user-edits" value="Edit">
+                <input type="submit" class="deletes-input" id="deletes" value="Delete">
+            </div>
+            <div class="div-contentss">
+                <h1 class="cardss-input">Task Title 3</h1>
+                <p class="paragss-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
+                <input type="submit" id="user-buttonss" class="buttonss-input" value="Low Priority">
+                <p class="statss-input">Status: Closed</p>
+                <p class="lastss-input">End Date: 2-01-2024</p>
+                <input type="button" class="editss-input" id="user-editss" value="Edit">
+                <input type="submit" class="deletess-input" id="user-deletess" value="Delete">
+            </div>
+        </section>
     </body>
 </html>
