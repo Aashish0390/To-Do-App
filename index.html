@@ -5,14 +5,16 @@
         <link rel="stylesheet" href="file.css">
     </head>
     <body>
-        <div>
-        
+       <div class="full-page">
+            <div class="form-full">
             <h1 class="heading">Create Task</h1>
             <!--Text area using required attribute-->
             <p class="para">Fill in the details below to create a new <br>task in your project management tool.</p>
 
-            <form>
-        
+            <section class="form-flex">
+
+            <form>   
+
             <input type="text" id="text" class="text" name="text" value="Task Title" ></input><br>
             <textarea id="Task Description" class="textarea" name="Task Description" rows="2" cols="30" required>Task Description</textarea><br>
         
@@ -36,10 +38,14 @@
             <!--submit-->
 
             <input type="submit" id="submit" class="submit" value="Submit" onclick="alert('Task Added')">
-            </form>
+        </form>
+    </section> 
+    
         </div>
-        <section>
+        <section class="flex-box">
+               
             <div class="div-content">
+                
                 <h1 class="card-input">Task Title 1</h1>
                 <p class="parag-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
                 <span  class="prior-input" id="prior_id">High Priority</span>
@@ -49,25 +55,30 @@
                 <button class="delete-input" id="user-delete" >Delete</button>
             </div>
             <div class="div-content">
+               
                 <h1 class="card-input">Task Title 2</h1>
                 <p class="parag-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
                 <!--<input type="submit" id="user-buttons" class="buttons-input" value="Medium Priority">-->
-                <span  class="priority-input" id="prior_id">High Priority</span>
+                <span  class="priority-input" id="prior_id">Medium Priority</span>
                 <p class="stat-input">Status: In progress</p>
                 <p class="last-input">End Date: 19-01-2025</p>
                 <button class="edit-input" id="used-edit">Edit</button>
                 <button class="delete-input" id="used-delete" >Delete</button>
             </div>
+            
             <div class="div-content">
+                
                 <h1 class="card-input">Task Title 3</h1>
                 <p class="parag-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
-                <span  class="priorities-input" id="prior_id">High Priority</span>
+                <span  class="priorities-input" id="prior_id">Low Priority</span>
                <!--<input type="submit" id="user-buttonss" class="buttonss-input" value="Low Priority">-->
                 <p class="stat-input">Status: Closed</p>
                 <p class="last-input">End Date: 2-01-2024</p>
                 <button class="edit-input" id="use-edit">Edit</button>
                 <button class="delete-input" id="use-delete" >Delete</button>
             </div>
-        </section>
+        
+    </section>
+</div>
     </body>
 </html>
