@@ -133,7 +133,7 @@ section{
 .div-content{
     
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     background-color: white;
     border: solid rgb(244, 247, 248);
     font-family: Arial, Helvetica, sans-serif;
@@ -143,13 +143,13 @@ section{
 }
 .card-input{
     margin-top: 5px;
-   margin-bottom: 0px;
-    padding-bottom: 0px;
+   margin-bottom: 5px;
+    padding-bottom: 2px;
     font-size: medium;
 }
 .parag-input{
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: small;
     text-align: left;
     padding-left: 2px;
@@ -161,26 +161,29 @@ section{
 
 .stat-input{
     font-size: small;
-    margin: 1px;
-    padding-top: 5px;
+    margin: 10px 5px 0px 0px;
+    padding: 0px 5px 0px 0px;
 }
 
 .last-input{
     font-size: small;
-    margin: 1px;
+    margin: 0px 5px 3px 0px;
     padding-top: 1px;
     padding-bottom: 10px;
 }
 
-.button-input{
-    margin-top: 3px;
+.prior-input{
+    
+    margin:  5px 5px 5px 0px;
     border-radius: 15px;
+    padding: 5px;
     border: 0px;
+    background-size: 30px;
     background-color: rgb(194, 137, 30);
     color: white;
-    font-size: 10px;
-    height: 25px;
-    width: 80px;
+    font-size: 12px;
+    
+    
    
 }
 
@@ -206,19 +209,11 @@ section{
 }
 
 
-/*card 2*/
+/*card 2* css having same class name are commented
 
 
-.div-contents{
-    border-radius: 10px;
-    padding: 5px;
-    background-color: white;
-    border: solid rgb(244, 247, 248) 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    width: 260px;
-    height: 180px;
-}
+
+
 .cards-input{
     margin-top: 5px;
    margin-bottom: 0px;
@@ -239,17 +234,34 @@ section{
 
 .stats-input{
     font-size: small;
-    margin: 1px;
-    padding-top: 5px;
+    margin: 10px 5px 5px 0px;
+    padding: 5px 5px 0pxpx 0px;
 }
 
-.lastsinput{
+.lasts-input{
     font-size: small;
     margin: 1px;
     padding-top: 1px;
     padding-bottom: 10px;
 }
+}*/
 
+.priority-input{
+    
+    margin:  5px 5px 5px 0px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 0px;
+    background-size: 30px;
+    background-color: rgb(194, 137, 30);
+    color: white;
+    font-size: 12px;
+    
+    
+   
+}
+
+/*
 .buttons-input{
     margin-top: 3px;
     border-radius: 15px;
@@ -262,7 +274,7 @@ section{
    
 }
 
-.edits-input{
+/*.edits-input{
     background-color: black;
     border: 0px;
     color: white;
@@ -281,9 +293,9 @@ section{
     font-size: small;
     margin-left: 2px;
     height: 30px;
-}
+}*/
 
-/* card 3 */
+/* card 3 
 
 
 .div-contentss{
@@ -314,21 +326,38 @@ section{
     
     
 
-}
+
 
 .statss-input{
     font-size: small;
-    margin: 1px;
-    padding-top: 5px;
+    margin: 10px 5px 5px 0px;
+    padding: 5px 5px 0pxpx 0px;
+    
 }
 
 .lastss-input{
     font-size: small;
-    margin: 1px;
-    padding-top: 1px;
-    padding-bottom: 10px;
+    margin: opx;
+    padding: 0px;
+}
+    }*/
+
+.priorities-input{
+    
+    margin:  5px 5px 5px 0px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 0px;
+    background-size: 30px;
+    background-color: rgb(194, 137, 30);
+    color: white;
+    font-size: 12px;
+    
+    
+   
 }
 
+/*
 .buttonss-input{
 
     margin-top: 3px;
@@ -341,6 +370,7 @@ section{
     width: 80px;
    
 }
+
 
 .editss-input{
     background-color: black;
@@ -362,3 +392,4 @@ section{
     margin-left: 2px;
     height: 30px;
 }
+*/
