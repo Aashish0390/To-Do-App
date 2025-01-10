@@ -1,4 +1,298 @@
+/* CSS FOR FULL-PAGE CLASS USED IN DIV  */
+.full-page{
+    display: flex;
+    margin: 5px 5px 5px 0px;
+    
+}
+
+
+/* CSS FOR DIV  */
+
 div{
+    background-color:rgba(237, 244, 244, 0.671);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 280px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    height: 670px;
+    
+    
+}
+
+/* CSS FOR BODY  */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS FOR HEADER  */
+
+.heading{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    font-size: 30px;
+    height: 30px;
+    
+}
+
+/* CSS FOR PARAGRAPH  */
+
+.para{
+    
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: justify;
+    color: rgb(59, 59, 59);
+    height: 30px;
+    width: 270px;
+    
+}
+
+/* CSS FOR TEXT TITLE  */
+
+.text{
+    border:solid #ccc;
+    padding: 5px;
+    width: 258px;
+    font-size: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 7px; 
+    color: rgb(121, 126, 128);
+    height: 20px;
+    
+}
+
+/* CSS FOR TEXTAREA  */
+
+.textarea{
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 260px;
+    border-radius: 7px;
+    color: rgb(121, 126, 128);
+    font-size: 11px;
+    
+    height: 50px;
+
+    }
+
+/* CSS FOR PRIORITY CONTAINER  */
+
+.priority{
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 272px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 7px;
+    font-size: 10px;
+   
+    height: 30px;
+}
+
+/* CSS FOR STATUS CONTAINER  */
+
+.status{
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 272px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 7px;
+    height: 30px;
+    font-size: 10px;
+}
+
+/* CSS FOR TIME  */
+
+.date{
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 260px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 7px;
+    color: rgb(121, 126, 128);
+    height: 20px;
+    font-size: 10px;
+
+}
+
+/* CSS FOR SUBMIT BUTTON  */
+
+.submit{
+    border: 2px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font: bolder;
+    padding: 5px;
+    width: 273px;
+    background-color: rgb(58, 137, 228);
+    color: white;
+    margin-top: 3px;
+    border-radius: 7px;
+    
+    height: 40px;
+}
+
+/*Cards*/
+
+/* CSS FOR THE WHOLE SECTION  */
+
+section{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+/* CSS FOR ALL THE SAME CLASSES USED IN EVERY CARDS   */
+
+.div-content{
+    
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    border: solid rgb(244, 247, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 260px;
+    height: 180px;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+/* CSS FOR TASK TITLE CLASS  */
+
+.card-input{
+    margin-top: 5px;
+   margin-bottom: 5px;
+    padding-bottom: 2px;
+    font-size: medium;
+}
+
+/* CSS FOR PARAGRAPH CLASS */
+
+.parag-input{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: small;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+/* CSS FOR SHOWING STATUS  */
+
+.stat-input{
+    font-size: small;
+    margin: 10px 5px 0px 0px;
+    padding: 0px 5px 0px 0px;
+}
+
+/* CSS FOR SHOWING END DATE  */
+
+.last-input{
+    font-size: small;
+    margin: 0px 5px 3px 0px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+/* CSS FOR SPAN TAG USED IN CARD SECTION 1  */
+
+.prior-input{
+    
+    margin:  5px 5px 5px 0px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 0px;
+    background-size: 30px;
+    background-color: rgb(194, 137, 30);
+    color: white;
+    font-size: 12px;
+    
+    
+   
+}
+
+/* CSS FOR EDIT BUTTON  */
+
+.edit-input{
+    background-color: black;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+    width: 55px;
+    font-size: small;
+    height: 30px;
+
+}
+
+/* CSS FOR DELETE BUTTON  */
+
+.delete-input{
+    color: black;
+    background-color: red;
+    border: 0px;
+    border-radius: 10px;
+    width: 70px;
+    font-size: small;
+    margin-left: 2px;
+    height: 30px;
+}
+
+/* CSS FOR SPAN TAG USED IN CARD SECTION 2  */
+
+.priority-input{
+    
+    margin:  5px 5px 5px 0px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 0px;
+    background-size: 30px;
+    background-color: rgb(30, 194, 71);
+    color: white;
+    font-size: 12px;
+    
+    
+   
+}
+
+/* CSS FOR SPAN TAG USED IN CARD SECTION 3  */
+
+.priorities-input{
+    
+    margin:  5px 5px 5px 0px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 0px;
+    background-size: 30px;
+    background-color: rgb(58, 137, 228);
+    color: white;
+    font-size: 12px;
+    
+    
+   
+}
+
+/* CSS FOR FULL CARD SECTION LAYOUT */
+
+.flex-box{
+    margin: 45px 10px;
+    width: 2000px;
+    background-color: white;
+    width: 1000px;
+    padding: 5px 5px 5px 5px;
+}div{
     background-color:rgba(237, 244, 244, 0.671);
     font-family: Arial, Helvetica, sans-serif;
     
