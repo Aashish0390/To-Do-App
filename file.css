@@ -1,14 +1,17 @@
 /* CSS FOR FULL-PAGE CLASS USED IN DIV  */
+
+
+
 .full-page{
     display: flex;
-    margin: 5px 5px 5px 0px;
+    margin:0px;
     
 }
 
 
 /* CSS FOR DIV  */
 
-div{
+/*div{
     background-color:rgba(237, 244, 244, 0.671);
     font-family: Arial, Helvetica, sans-serif;
     
@@ -18,15 +21,20 @@ div{
     padding-right: 20px;
     padding-bottom: 15px;
     height: 670px;
+    margin: 0px;
     
     
-}
+}*/
+
+
 
 /* CSS FOR BODY  */
 
 body{
     margin: 0px;
     padding: 0px;
+   
+    
 }
 
 /* CSS FOR HEADER  */
@@ -157,9 +165,10 @@ section{
 /* CSS FOR ALL THE SAME CLASSES USED IN EVERY CARDS   */
 
 .div-content{
+   
     
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid rgb(244, 247, 248);
     font-family: Arial, Helvetica, sans-serif;
@@ -222,6 +231,13 @@ section{
     
     
    
+}
+
+.form-full{
+    background-color: rgba(235, 232, 232, 0.944);
+    margin: 0px;
+    padding: 0px 10px 10px 10px;
+    height: 100vh;
 }
 
 /* CSS FOR EDIT BUTTON  */
@@ -287,9 +303,116 @@ section{
 /* CSS FOR FULL CARD SECTION LAYOUT */
 
 .flex-box{
-    margin: 45px 10px;
-    width: 2000px;
+    display: flex;
+    margin: 45px 10px 0px 0px;
     background-color: white;
-    width: 1000px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 10px;
 }
+
+
+
+
+@media only screen and (max-width:480px){
+    .flex-box{
+        width: 100%;
+    border: 1px solid black;
+
+        flex-direction: column;
+        margin: 5px;
+       
+        padding: 0px;
+    }
+
+    .full-page{
+        flex-direction: column;
+        
+        margin:0px 0px 0px 0px;
+        width: 100%;
+    border: 1px solid black;
+    }
+
+    .form-flex{
+        margin: 10px;
+        /*max-width: fit-content;*/
+        justify-items: stretch;
+        
+    border: 1px solid black;
+    }
+
+
+    .form-full{
+        align-items: center;
+        height: fit-content;
+       /* padding: 30px 30px 30px 40px; */
+        width: 100%;
+    border: 1px solid black;
+        padding: 10px 0px 10px 15px;
+        margin: 0px;
+        
+    }
+    
+    .div-content{
+        padding: 10px 5px 10px 5px;
+        margin: 10px 0px 0px 5px;
+        width: 100%;
+    border: 1px solid black;
+        
+    }
+    .text{
+        width: 100%;
+    
+        justify-self: center;
+    }
+    .textarea{
+        width: 100%;
+    
+        justify-self: center;
+    }
+    .priority{
+        width: 100%;
+    
+        justify-self: center;
+    }
+    .status{
+        width: 100%;
+    
+        justify-self: center;
+    }
+    .date{
+        width: 100%;
+    
+        justify-self: center;
+    }
+    .submit{
+        width: 100%;
+    
+        justify-self: center;
+    }
+    .one-form{
+        width: 100%;
+    border: 1px solid black;
+    }
+    
+    
+}
+
+
+/*@media only screen and(min-width:) and (max-width:480px){
+    .flex-box{
+        flex-direction: column;
+
+    }
+
+    .full-page{
+        flex-direction: column;
+        
+    }
+    }
+
+
+
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+      }
