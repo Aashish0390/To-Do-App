@@ -314,12 +314,12 @@ section{
 
 @media only screen and (max-width:480px){
     .flex-box{
-        width: 100%;
-    border: 1px solid black;
+       
+    
 
         flex-direction: column;
-        margin: 5px;
-       
+        margin: 5%;
+       align-items: center;
         padding: 0px;
     }
 
@@ -328,15 +328,14 @@ section{
         
         margin:0px 0px 0px 0px;
         width: 100%;
-    border: 1px solid black;
+    
     }
 
     .form-flex{
         margin: 10px;
         /*max-width: fit-content;*/
         justify-items: stretch;
-        
-    border: 1px solid black;
+     
     }
 
 
@@ -345,17 +344,18 @@ section{
         height: fit-content;
        /* padding: 30px 30px 30px 40px; */
         width: 100%;
-    border: 1px solid black;
-        padding: 10px 0px 10px 15px;
+    
+        padding: 3%;
         margin: 0px;
         
     }
     
     .div-content{
-        padding: 10px 5px 10px 5px;
-        margin: 10px 0px 0px 5px;
+        padding: 5px 0px 5px 5px;
+        margin: 2%;
         width: 100%;
-    border: 1px solid black;
+        height: 23vh;
+    
         
     }
     .text{
@@ -390,10 +390,18 @@ section{
     }
     .one-form{
         width: 100%;
-    border: 1px solid black;
+    
     }
     
-    
+    * {
+        box-sizing: border-box; /* Ensures consistent sizing */
+      }
+      .heading{
+        margin-left: 2%;
+      }
+      .para{
+        margin-left: 2%;
+      }
 }
 
 
