@@ -1,9 +1,7 @@
 /* CSS FOR FULL-PAGE CLASS USED IN DIV  */
 
 
-html{
-    height: auto;
-}
+
 .full-page{
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); Three equal columns for larger screens */
@@ -466,7 +464,7 @@ section{
 
     .form-full{
         align-items: center;
-        height: auto;
+        
        /* padding: 30px 30px 30px 40px; */
         width: 100%;
     
@@ -580,7 +578,7 @@ section{
     
         .form-full{
             align-items: center;
-            height: 430px;
+            /* height: 430px; */
            /* padding: 30px 30px 30px 40px; */
             width: 100%;
         
@@ -668,3 +666,4 @@ section{
     }
 }
     
+
