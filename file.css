@@ -1,30 +1,19 @@
 /* CSS FOR FULL-PAGE CLASS USED IN DIV  */
 
 
-
+html{
+    height: auto;
+}
 .full-page{
-    display: flex;
-    margin:0px;
-    
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); Three equal columns for larger screens */
+    margin: 0;
+    padding: 0;
+      grid-template-columns: 295px 1fr;  
 }
 
 
-/* CSS FOR DIV  */
 
-/*div{
-    background-color:rgba(237, 244, 244, 0.671);
-    font-family: Arial, Helvetica, sans-serif;
-    
-    width: 280px;
-    border-radius: 3px;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    height: 670px;
-    margin: 0px;
-    
-    
-}*/
 
 
 
@@ -45,7 +34,7 @@ body{
     padding-bottom: 0px;
     padding-left: 5px;
     font-size: 30px;
-    height: 30px;
+   
     
 }
 
@@ -55,10 +44,9 @@ body{
     
     font-size: 15px;
     padding-left: 5px;
-    text-align: justify;
+        
     color: rgb(59, 59, 59);
-    height: 30px;
-    width: 270px;
+    
     
 }
 
@@ -175,7 +163,7 @@ section{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 260px;
     height: 180px;
-    margin: 10px 10px 10px 10px;
+    margin: 40px 10px 10px 5px;
     
 }
 
@@ -237,7 +225,9 @@ section{
     background-color: rgba(235, 232, 232, 0.944);
     margin: 0px;
     padding: 0px 10px 10px 10px;
-    height: 100vh;
+    height: 98.5vh;
+    width: 275px;
+    
 }
 
 /* CSS FOR EDIT BUTTON  */
@@ -303,84 +293,111 @@ section{
 /* CSS FOR FULL CARD SECTION LAYOUT */
 
 .flex-box{
-    display: flex;
+    /* display: flex;
     margin: 45px 10px 0px 0px;
     background-color: white;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 5px 5px 10px; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+   max-width: 900px;
+    /* padding: 50px 5px 0px 10px; */
+    background-color: white;
+    align-content: flex-start;
+    
+    height: auto;
+    
 }
 
 
+ /* CSS MEDIA QUERY  FOR SMALL SCREEN DEVICES LIKE MOBILE PHONES */
 
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:620px){
     .flex-box{
-       
-    
-
-        flex-direction: column;
+        /* flex-direction: column;
         margin: 5%;
        align-items: center;
-        padding: 0px;
-    }
+        padding: 0px; */
+
+
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 0px;
+        /* border: 2px solid black; */
+        
+
+    
+    } 
+
+
 
     .full-page{
-        flex-direction: column;
+        /* flex-direction: column; */
+        grid-template-columns: 1fr;
         
-        margin:0px 0px 0px 0px;
+        
         width: 100%;
+        /* border: 2px solid black; */
     
     }
 
     .form-flex{
         margin: 10px;
         /*max-width: fit-content;*/
-        justify-items: stretch;
+        
+        /* border: 2px solid black; */
      
     }
 
 
     .form-full{
         align-items: center;
-        height: fit-content;
+        height: 430px;
        /* padding: 30px 30px 30px 40px; */
         width: 100%;
     
         padding: 3%;
         margin: 0px;
+        /* border: 2px solid black; */
+        
         
     }
     
     .div-content{
         padding: 5px 0px 5px 5px;
-        margin: 2%;
-        width: 100%;
-        height: 23vh;
+        margin:15px;
+        width: auto;
+        height: auto;
+        /* border: 2px solid black; */
     
         
     }
     .text{
         width: 100%;
-    
+    height: 17%;
         justify-self: center;
     }
     .textarea{
         width: 100%;
-    
+    height: 25%;
+    margin: 3px 0px 0px 0px;
         justify-self: center;
     }
     .priority{
         width: 100%;
-    
+    height: 17%;
         justify-self: center;
     }
     .status{
         width: 100%;
-    
+    height: 17%;
         justify-self: center;
     }
     .date{
         width: 100%;
-    
+    height: 17%;
         justify-self: center;
     }
     .submit{
@@ -390,6 +407,7 @@ section{
     }
     .one-form{
         width: 100%;
+
     
     }
     
@@ -401,26 +419,252 @@ section{
       }
       .para{
         margin-left: 2%;
+        margin-right: 2%;
       }
+      
 }
 
 
-/*@media only screen and(min-width:) and (max-width:480px){
-    .flex-box{
-        flex-direction: column;
+ /* CSS MEDIA QUERY  FOR DEVICES LIKE TABS */
 
-    }
+
+@media only screen and (min-width:620px) and (max-width:768px){
+    .flex-box{
+        /* flex-direction: column;
+        margin: 5%;
+       align-items: center;
+        padding: 0px; */
+
+        grid-template-columns: repeat(2, 1fr);
+        
+        gap: 0px;
+        /* border: 2px solid black; */
+        
+
+    
+    } 
+
+
 
     .full-page{
-        flex-direction: column;
+        /* flex-direction: column; */
+    
+        margin:0px 0px 0px 0px;
+        width: 100%;
+        /* border: 2px solid black; */
+    
+    }
+
+    .form-flex{
+        margin: 10px;
+        /*max-width: fit-content;*/
+        justify-items: stretch;
+        /* border: 2px solid black; */
+     
+    }
+
+
+    .form-full{
+        align-items: center;
+        height: auto;
+       /* padding: 30px 30px 30px 40px; */
+        width: 100%;
+    
+        padding: 3%;
+        margin: 0px;
+        /* border: 2px solid black; */
+
+    }
+    
+    .div-content{
+        padding: 5px 0px 5px 5px;
+        margin: 7%;
+        width: auto;
+        height: auto;
+        /* border: 2px solid black; */
+    
         
     }
+    
+    .text{
+        width: 100%;
+    height: 17%;
+        justify-self: center;
+    }
+    .textarea{
+        width: 100%;
+    height: 25%;
+    margin: 3px 0px 0px 0px;
+        justify-self: center;
+    }
+    .priority{
+        width: 100%;
+    height: 17%;
+        justify-self: center;
+    }
+    .status{
+        width: 100%;
+    height: 17%;
+        justify-self: center;
+    }
+    .date{
+        width: 100%;
+    height: 17%;
+        justify-self: center;
+    }
+    .submit{
+        width: 100%;
+    
+        justify-self: center;
+    }
+    .one-form{
+        width: 100%;
+        
+    
+    }
+    
+    * {
+        box-sizing: border-box; /* Ensures consistent sizing */
+      }
+      .heading{
+        margin-left: 2%;
+      }
+      .para{
+        margin-left: 2%;
+        margin-right: 2%;
+      }
     }
 
+    
 
 
-    html, body {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-      }
+
+    /* CSS MEDIA QUERY  FOR DEVICES LIKE COMPUTERS */
+
+
+@media only screen and (min-width:769px) and( max-width: 1499px){
+        .flex-box{
+            /* flex-direction: column;
+            margin: 5%;
+           align-items: center;
+            padding: 0px; */
+            grid-template-columns:  repeat (3, 1fr);
+            max-width: 1499px;
+            
+            /* border: 2px solid black;
+             */
+            
+    
+        
+        } 
+    
+    
+    
+        .full-page{
+            /* flex-direction: column; */
+           
+            
+            width: 100%;
+            /* border: 2px solid black; */
+        
+        }
+    
+        .form-flex{
+            margin: 10px;
+            /*max-width: fit-content;*/
+            justify-items: stretch;
+            /* border: 2px solid black; */
+         
+        }
+    
+    
+        .form-full{
+            align-items: center;
+            height: 430px;
+           /* padding: 30px 30px 30px 40px; */
+            width: 100%;
+        
+            padding: 3%;
+            margin: 0px;
+            /* border: 2px solid black; */
+            
+        }
+        
+        .div-content{
+            padding: 5px 0px 5px 5px;
+            margin: 45px 0px 0px 20px;
+           
+            /* border: 2px solid black; */
+        
+            
+        }
+        
+        .text{
+            width: 100%;
+        height: 17%;
+            justify-self: center;
+        }
+        .textarea{
+            width: 100%;
+        height: 25%;
+        margin: 3px 0px 0px 0px;
+            justify-self: center;
+        }
+        .priority{
+            width: 100%;
+        height: 17%;
+            justify-self: center;
+        }
+        .status{
+            width: 100%;
+        height: 17%;
+            justify-self: center;
+        }
+        .date{
+            width: 100%;
+        height: 17%;
+            justify-self: center;
+        }
+        .submit{
+            width: 100%;
+        
+            justify-self: center;
+        }
+        .one-form{
+            width: 100%;
+    
+        
+        }
+        
+        * {
+            box-sizing: border-box; /* Ensures consistent sizing */
+          }
+          .heading{
+            margin-left: 2%;
+          }
+          .para{
+            margin-left: 2%;
+            margin-right: 2%;
+          }
+        }
+
+
+
+
+         /* CSS MEDIA QUERY  FOR LARGE SCREEN DEVICES  */
+
+
+@media only screen and  (min-width:1500px){
+
+    .flex-box{
+        grid-template-columns: repeat(4, 1fr);
+        min-width: 1024px;
+        max-width: auto;
+        /* border: 2px solid black; */
+    }
+    .div-content{
+        /* border: 2px solid black; */
+        margin: 40px 0px 0px 15px;
+    }
+}
+    
