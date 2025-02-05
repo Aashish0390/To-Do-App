@@ -3,87 +3,151 @@
     <head>
         
         <title>To-Do Tasks app</title>
-        <link rel="stylesheet" href="file.css">
+        <link rel="stylesheet" href="style.css">
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
     </head>
     <body>
        <div class="full-page">
+        <div class="static-section">
             <div class="form-full">
             <h1 class="heading">Create Task</h1>
             <!--Text area using required attribute-->
-            <p class="para">Fill in the details below to create a new <br>task in your project management tool.</p>
+            <p class="para">Fill in the details below to create a new task in your project management tool.</p>
 
             <section class="form-flex">
 
-            <form class="one-form">   
+            <form action=" " name="myForm" class="one-form" id="form-id" onsubmit = "handleSubmit(event)" method="post">   
 
-            <input type="text" id="text" class="text" name="text" value="Task Title" ></input><br>
-            <textarea id="Task Description" class="textarea" name="Task Description" rows="2" cols="30" required>Task Description</textarea><br>
-        
+            <div class="name" id="name">
+            <input type="text" id="text" class="text" name="text" value="" onchange="clearErrors('name')" ></input><br>
+            <span  class="text-ip"></span>
+            </div>
+
+
+            <div class="textra" id="textra">
+            <textarea id="task-description" class="textarea" name="task-description" rows="2" cols="30" onchange="clearErrors('textra')"></textarea><br>
+            <span  class="text-ip"></span>
+            </div>
+
+
+
             <!--Drop-Down list-->
-            <select name="priority" class="priority" id="priority" required>
-                <option value="High">Priority - High</option>
-                <option value="Medium">Priority - Medium</option>
-                <option value="Low">Priority - Low</option>
+            
+            <div class="prior-ip" id="prior-ip">
+            <select name="priority" class="priority" id="priority" onchange="clearErrors('prior-ip')" >
+                <option value="">Select Priority</option>
+                <option value="High">High-Priority</option>
+                <option value="Medium"> Medium-Priority</option>
+                <option value="Low">Low-Priority</option>
             </select><br>
+            <span  class="text-ip"></span>
+            </div>
+            
         
             <!--Drop Down list-->
-            <select name="status" class="status" id="status" required>
-                <option value="Open">Status - Open</option>
-                <option value="Closed">Status - Closed</option>
+            <div class="stat-ip" id="stat-ip">
+                <select name="status" class="status" id="status" onchange="clearErrors('stat-ip')">
+                <option value=""> Select Status</option>
+                <option value="Open">Open</option>
+                <option value="progress">In Progress</option>
+                <option value="Closed">Closed</option>
             </select><br>
+            <span  class="text-ip"></span>
+            </div>
+            
 
                 <!--Date attribute-->
-
-            <input type="date" id="date" class="date" name="begin" placeholder="DD-MM-YYYY" value="" min="01-01-1990" max="12-31-2050" required><br>
-        
+            <div class="date-field" id="date-field">
+                <input type="date"  class="date" name="date" placeholder="DD-MM-YYYY" value="" onchange="clearErrors('date-field')"><br>
+                <span  class="text-ip"></span>
+            </div>
             <!--submit-->
 
-            <input type="submit" id="submit" class="submit" value="Submit" onclick="alert('Task Added')">
+            <input type="submit" id="submit" class="submit" value="Submit">
         </form>
+   
     </section> 
-    
+     </div>
         </div>
-        <section class="flex-box">
+
+        <div class="filter-status" id="filter-ip">
+            <div class="filter-both">
+
+                <select name="filter" class="filter" id="filter-stat" onchange="clearErrors('filter-ip')">
+                    <option value=""> Filter by Status</option>
+                    <option value="Open">Status: Open</option>
+                    <option value="progress">Status: In Progress</option>
+                    <option value="Closed">Status: Closed</option>
+                </select><br>
+
+                <select name="filter-prior" class="filter-prior" id="filter-prior" onchange="clearErrors('prior-ip')" >
+                    <option value="">Filter by Priority</option>
+                    <option value="High">High - Priority</option>
+                    <option value="Medium"> Medium - Priority</option>
+                    <option value="Low">Low - Priority</option>
+                </select>
+
+                <div class="search-input">
+                    <input class="search-text" type="text" placeholder="Search tasks...">
+                </div>
+
+           
+        </div>
+
+        
+<div class = scroll-section>
+   
+         <section class="flex-box" id="flex-box" >
                
-            <div class="div-content">
+            <!-- <div class="div-content">
                 
                 <h1 class="card-input">Task Title 1</h1>
                 <p class="parag-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
                 <span  class="prior-input" id="prior_id">High Priority</span>
                 <p class="stat-input">Status: Open</p>
                 <p class="last-input">End Date: 12-01-2025</p>
+               <div class="ed-dl">
                 <button class="edit-input" id="user-edit">Edit</button>
                 <button class="delete-input" id="user-delete" >Delete</button>
+                </div>
             </div>
             <div class="div-content">
                
                 <h1 class="card-input">Task Title 2</h1>
                 <p class="parag-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
-                <!--<input type="submit" id="user-buttons" class="buttons-input" value="Medium Priority">-->
+                
                 <span  class="priority-input" id="prior_id">Medium Priority</span>
                 <p class="stat-input">Status: In progress</p>
                 <p class="last-input">End Date: 19-01-2025</p>
+                <div class="ed-dl">
                 <button class="edit-input" id="used-edit">Edit</button>
                 <button class="delete-input" id="used-delete" >Delete</button>
             </div>
+        </div>
+
             
             <div class="div-content">
                 
                 <h1 class="card-input">Task Title 3</h1>
                 <p class="parag-input">This is a description of task 1. It provides an overview of what needs to be done.</p>
                 <span  class="priorities-input" id="prior_id">Low Priority</span>
-               <!--<input type="submit" id="user-buttonss" class="buttonss-input" value="Low Priority">-->
+             
                 <p class="stat-input">Status: Closed</p>
                 <p class="last-input">End Date: 2-01-2024</p>
+                <div class="ed-dl">
                 <button class="edit-input" id="use-edit">Edit</button>
                 <button class="delete-input" id="use-delete" >Delete</button>
             </div>
+            </div> -->
         
-    </section>
+    </section> 
 </div>
+</div>
+<script src="file.js"></script>
     </body>
 </html>
+
+
