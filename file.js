@@ -1,7 +1,7 @@
 
 
 
-//  Updated the functionality of the seardh, sorting and filtering of the cards based on their inputs
+//  Updated the functionality of the search, sorting and filtering of the cards based on their inputs
 
 var todoArray = JSON.parse(localStorage.getItem('cards')) || [];
 var editId = null;
