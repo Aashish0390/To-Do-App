@@ -10,9 +10,35 @@
       grid-template-columns: 295px 1fr;  
 }
 
+.text-ip{
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.static-section{
+    width: 275px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: lightgray; 
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 
 
+.scroll-section {
+    display: flex;
+    justify-content: center;
+    width: auto; 
+    overflow-y: auto; 
+    height: calc(98.5vh - 60px); 
+    padding: 0px;
+    /* box-sizing: border-box; */
+    
+  }
 
 
 /* CSS FOR BODY  */
@@ -39,10 +65,10 @@ body{
 /* CSS FOR PARAGRAPH  */
 
 .para{
-    
+    height: fit-content;
     font-size: 15px;
     padding-left: 5px;
-        
+    margin: 0px;
     color: rgb(59, 59, 59);
     
     
@@ -129,99 +155,206 @@ body{
     font-size: medium;
     font: bolder;
     padding: 5px;
-    width: 273px;
+    
     background-color: rgb(58, 137, 228);
     color: white;
     margin-top: 3px;
     border-radius: 7px;
-    
+    width: 100%;
     height: 40px;
 }
 
+
+
 /*Cards*/
 
-/* CSS FOR THE WHOLE SECTION  */
 
-section{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-}
+
 
 /* CSS FOR ALL THE SAME CLASSES USED IN EVERY CARDS   */
 
 .div-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 10px 10px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    padding: 8px 10px 0px 10px;
+    border: 1px solid rgb(247, 246, 246);
+    width: 260px;
+    height: 160px;
+    column-gap: 5px;
+    
    
     
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
-    border: solid rgb(244, 247, 248);
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    width: 260px;
-    height: 180px;
-    margin: 40px 10px 10px 5px;
+    
     
 }
 
 /* CSS FOR TASK TITLE CLASS  */
 
 .card-input{
+    grid-column: span 4;
+
     margin-top: 5px;
-   margin-bottom: 5px;
-    padding-bottom: 2px;
+    margin: 0px;
+    padding: 0px;
+   /* margin-bottom: 5px;
+    padding-bottom: 2px; */
     font-size: medium;
 }
 
 /* CSS FOR PARAGRAPH CLASS */
 
 .parag-input{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    grid-column: span 4;
+    height: fit-content;
+    
     font-size: small;
     text-align: left;
-    padding-left: 2px;
-    padding-right: 5px;
+    padding: 0px;
+    margin: 0px;
+    /* padding: 0px; */
+    
 }
 
 /* CSS FOR SHOWING STATUS  */
 
 .stat-input{
+    grid-column: span 4;
+    
     font-size: small;
-    margin: 10px 5px 0px 0px;
-    padding: 0px 5px 0px 0px;
+    /* margin: 5px 5px 0px 0px;
+    padding: 5px 5px 0px 0px; */
+    margin: 0px;
+    
 }
 
 /* CSS FOR SHOWING END DATE  */
 
 .last-input{
+    grid-column: span 4;
+    margin: 0px;
     font-size: small;
-    margin: 0px 5px 3px 0px;
-    padding-top: 1px;
-    padding-bottom: 10px;
+    /* margin: 0px 5px 3px 0px;
+    padding-top: 1px; */
+    padding-bottom: 0px;
+    
+    
 }
 
 /* CSS FOR SPAN TAG USED IN CARD SECTION 1  */
 
-.prior-input{
-    
-    margin:  5px 5px 5px 0px;
-    border-radius: 15px;
-    padding: 5px;
-    border: 0px;
-    background-size: 30px;
-    background-color: rgb(194, 137, 30);
-    color: white;
+/* .padding-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 20px;
+    padding: 5px 0px 5px 5px;
+    border: 2px solid black;
+    border-radius: 10px;
     font-size: 12px;
+} */
+
+
+.priority-high{
+    /* grid-column: span 2;
+    width: 100px; */
+    background-color: rgb(194, 137, 30);
+    /* border-radius: 15px;
+    /* margin:  5px 10px 5px 0px; */
+    /* padding: 5px 0px 5px 0px; */
+    /* text-align: center;
+    font-size: 12px;
+    color: white; */
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 10px;
+    padding: 5px 10px;
+   
+    border-radius: 15px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
     
     
    
 }
 
+/* CSS FOR SPAN TAG USED IN CARD SECTION 2  */
+
+.priority-medium{
+    /* grid-column: span 2;
+    width: 100px; */
+    background-color: rgb(30, 194, 71);
+    /* border-radius: 15px; */
+    /* margin:  5px 10px 5px 0px; */
+    /* padding: 5px 0px 0px 0px; */
+    /* text-align: center;
+    font-size: 12px;
+    color: white; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 10px;
+    padding: 5px 10px;
+    
+    border-radius: 15px;
+    font-size: 12px;
+    color: white;
+   
+    font-weight: bold;
+}
+
+
+/* CSS FOR SPAN TAG USED IN CARD SECTION 3  */
+
+.priority-low{
+    
+    /* grid-column: span 2;
+    width: 100px; */
+    background-color: rgb(58, 137, 228);
+    /* border-radius: 15px; */
+    /* margin:  5px 10px 5px 0px; */
+    /* padding: 5px 0px 0px 0px; */
+    /* text-align: center;
+    font-size: 12px;
+    color: white; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 10px;
+    padding: 5px 10px;
+    
+    border-radius: 15px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    
+
+    
+   
+}
+
+
+
 .form-full{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 5px;
+    align-content: start;
     background-color: rgba(235, 232, 232, 0.944);
     margin: 0px;
+    
     padding: 0px 10px 10px 10px;
     height: 98.5vh;
     width: 275px;
@@ -229,15 +362,19 @@ section{
 }
 
 /* CSS FOR EDIT BUTTON  */
-
+ .ed-dl{
+    display: grid;
+    grid-template-columns: 60px 80px;
+    column-gap: 5px;
+ }
 .edit-input{
+    grid-column: span 1;
     background-color: black;
-    border: 0px;
     color: white;
     border-radius: 10px;
-    width: 55px;
     font-size: small;
     height: 30px;
+    
 
 }
 
@@ -252,41 +389,10 @@ section{
     font-size: small;
     margin-left: 2px;
     height: 30px;
+    
 }
 
-/* CSS FOR SPAN TAG USED IN CARD SECTION 2  */
 
-.priority-input{
-    
-    margin:  5px 5px 5px 0px;
-    border-radius: 15px;
-    padding: 5px;
-    border: 0px;
-    background-size: 30px;
-    background-color: rgb(30, 194, 71);
-    color: white;
-    font-size: 12px;
-    
-    
-   
-}
-
-/* CSS FOR SPAN TAG USED IN CARD SECTION 3  */
-
-.priorities-input{
-    
-    margin:  5px 5px 5px 0px;
-    border-radius: 15px;
-    padding: 5px;
-    border: 0px;
-    background-size: 30px;
-    background-color: rgb(58, 137, 228);
-    color: white;
-    font-size: 12px;
-    
-    
-   
-}
 
 /* CSS FOR FULL CARD SECTION LAYOUT */
 
@@ -302,10 +408,58 @@ section{
    max-width: 900px;
     /* padding: 50px 5px 0px 10px; */
     background-color: white;
-    align-content: flex-start;
-    
+    /* justify-content: center;
+    /* align-content: flex-start; */
+    /* align-items: center; */
+    padding: 0px 10px;
     height: auto;
     
+}
+
+
+
+.filter-both{
+    height:60px;
+display: flex;
+position: static;
+
+
+}
+
+.filter-prior{
+    background: white;
+    border: 0px ;
+    padding:  20px 0px 20px 20px;
+    margin-left: 0px ;
+    position: sticky;
+    
+}
+
+
+
+.filter{
+    background: white;
+    border: 0px ;
+    padding: 20px 0px 20px 20px;
+    margin-left: 140px ;
+   
+
+}
+
+.search-text{
+border: none;
+padding: 5px;
+width: 250px;
+color: grey;
+}
+
+.search-input{
+    border: none;
+    
+    background: white;
+    border: 0px ;
+    padding: 20px;
+    margin-left: 310px ;
 }
 
 
@@ -590,7 +744,7 @@ section{
         
         .div-content{
             padding: 5px 0px 5px 5px;
-            margin: 45px 0px 0px 20px;
+            margin: 45px 0px 0px 25px;
            
             /* border: 2px solid black; */
         
@@ -652,18 +806,37 @@ section{
          /* CSS MEDIA QUERY  FOR LARGE SCREEN DEVICES  */
 
 
-@media only screen and  (min-width:1500px){
+/* @media only screen and  (min-width:1500px){
 
     .flex-box{
         grid-template-columns: repeat(4, 1fr);
         min-width: 1024px;
         max-width: auto;
-        /* border: 2px solid black; */
+      
     }
     .div-content{
-        /* border: 2px solid black; */
+       
         margin: 40px 0px 0px 15px;
     }
-}
+} */
     
 
+/*@media only screen and(min-width:) and (max-width:480px){
+    .flex-box{
+        flex-direction: column;
+
+    }
+
+    .full-page{
+        flex-direction: column;
+        
+    }
+    }
+
+
+
+      html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+      }
